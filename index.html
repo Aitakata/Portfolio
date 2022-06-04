@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Dev - Módulo IV</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+</head>
+
+<body>
+    <div>
+        <header id="presentation">
+            <div class="presentation container">
+                <div>
+                    <h1>Olá, <span></span></h1>
+                    <h1>meu nome é<span></span></h1>
+                    <h1>Artur Takata<span></span></h1>
+                    <h2>(Full Cycle Dev)<span></span></h2>
+                    <a href="#portfolio" type="button" class="cta">Portifólio</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="portfolio">
+                <div class="portfolio container">
+                    <div class="portfolio header">
+                        <h1 class="section-title">
+                            <img src="./Logo.png" alt="logo" style="width:100px">
+                            <span>Portifólio</span>
+                            <!-- Carrousel -->
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                                </ol>
+                            <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <a href="#Seetec">                                            
+                                            <img src="./Seetec.jpg" alt="Seetec" style="width: 100%;">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#Pitu">
+                                            <img src="./Pitu.jpg" alt="Pitu" stype="width: 100%;">
+                                        </a>
+                                    </div>                     
+                                    <div class="item">
+                                        <a href="#2001">
+                                            <img src="./A space Odyssey.jpg" alt="Netflix Dio" style="width: 100%;">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#Quiz">
+                                            <img src="./Star wars.jpg" alt="Quiz" style="width: 100%;">
+                                        </a>
+                                    </div>
+                                </div>
+                            <!-- Left and right controls -->
+                                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <!-- Carrousel -->
+                        </h1>
+                    </div>
+                    <div class="all-projects">
+                        <article id="Seetec" class="project-item">
+                            <section class="project-info">
+                                <h1>Projeto Seetec</h1>
+                                <h2>App Secretaria Escolar Digital</h2>
+                                <p>Projeto desenvolvido durante o curso de desenvolvimento móbile da ETEC Sebrae (Campos Elísios) do 
+                                   Centro Paula Souza para Interação entre os alunos e a Secretaria da escola para solicitação e 
+                                   acompanhamento de documentos, bem como para obter informações. O Front-End App foi desenvolvido em 
+                                   Flutter, o acesso na secretaria (desktop) em a parte de Back-End em Java, para interface foram 
+                                   utilizadas API Rest. 
+                                   <br> 
+                                   <button type="button" class="botao">
+                                    <a href="#portfolio"><span style="color:aliceblue">Retornar</span></a>
+                                   </button>
+                                </p>
+                            </section>
+                            <figure class="project-img">
+                                <img src="./Seetec.jpg" alt="Seetec">
+                                <figcaption>Seetec</figcaption>
+                            </figure>
+                        </article>
+                        <article  id="Pitu" class="project-item">
+                            <section class="project-info">
+                                <h1>Projeto Pitu</h1>
+                                <h2>URL Shortener</h2>
+                                <p>O Pitu é single micro-SaaS na cloud para encurtamento de URLs. Permite perrsonalizar os seus links, 
+                                    encurtandos e criando endereços para a sua marca. Desta forma, os usuários terão mais
+                                    facilidades no reconhecimento do seu negócio em meio a tanta concorrência no ambiente digital.
+                                    <br> <button type="button" class="botao">
+                                        <a href="#portfolio"><span style="color:aliceblue">Retornar</span></a>
+                                    </button>
+                                </p>
+                            </section>
+                            <figure class="project-img">
+                                <img src="./Pitu.jpg" alt="Pitu">
+                                <figcaption>Pitu</figcaption>
+                            </figure>
+                        </article>
+                        <article id="2001" class="project-item">
+                            <section class="project-info">
+                                <h1>Projeto Netflix - Dio</h1>
+                                <h2>Recriando a interface Netflix</h2>
+                                <p>Projeto desevolvido em <em>Javascript/Typscript</em> durante o curso Dio. O objetivo foi recriar a 
+                                   interface de comunicação como o <cite>Netflix</cite>. A ideia é ter um base de dados com informações
+                                   básicos dos filmes disponíveis: Uma resenha do filme, uma imagem, diretor, elenco, etc. Atráves do 
+                                    App é possível acessar os dados e programar a visualização do filme.
+                                    <br> <button type="button" class="botao">
+                                        <a href="#portfolio"><span style="color:aliceblue">Retornar</span></a>
+                                    </button>
+                                </p>
+                            </section>
+                            <figure class="project-img">
+                                <img src="./A space Odyssey.jpg" alt="Netflix Dio">
+                                <figcaption>Netflix Dio</figcaption>
+                            </figure>
+                        </article>
+                        <article  id="Quiz" class="project-item">
+                            <section class="project-info">
+                                <h1>Projeto Star Wars</h1>
+                                <h2>Quiz - teste de conhecimento sobre a Saga</h2>
+                                <p>Projeto desenvolvido durante <em>Curso de Next.js</em> da Alura. Basicamente é um aplicativo que 
+                                    testa seus conhecimentos sobre a <cite>Saga de Filmes Star Wars</cite>.
+                                    <br> 
+                                    <br> <button type="button" class="botao">
+                                        <a href="#portfolio"><span style="color:aliceblue">Retornar</span></a>
+                                    </button>
+                                </p>
+                            </section>
+                            <figure class="project-img">
+                                <img src="./Star wars.jpg" alt="Star wars">
+                                <figcaption>Quiz - Stars War</figcaption>
+                            </figure>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="rodape">
+            <header id="rodape-header">
+                <p> Projeto desenvolvido por <span style="color:orange">Artur Issamu Takata</span></p>
+            </header>
+            <main>
+                <a ref="#"> <i class="fa fa-instagram"></i> arturissamu</a>  <br>
+                <a ref="#"> <i class="fa fa-linkedin"></i> artur-issamu-takata-a110671a</a> <br>
+                <a href="mailto:artur.takata@gmail.com"> <i class="fa fa-envelope-o"></i> artur.takata@gmail.com</a> <br>
+                <a ref="#"> <i class="fa fa-whatsapp"></i> (+55) 11 981193582</a> 
+            </main>
+            <div>
+                <img src="./Logo.png" alt="Logo Artur" height="10" />
+            </div>
+            <aside>
+                <address>
+                    <b>Endereço:</b> <br>
+                    Rua Bernardino de Aguiar, 271 <br>
+                    Jd. Maria Estela <br>
+                    São Paulo - SP - cep 04181-60
+                </address>
+            </aside>
+            <footer>
+                <p>&copy;Copyright 2022 - Todos os direitos reservados</p>
+            </footer>
+        </footer>
+    </div>   
+</body>
+</html>
